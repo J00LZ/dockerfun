@@ -1,0 +1,15 @@
+{
+  "name": "docker-site",
+  "version": "1.0.0",
+  "description": "A simple site using docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "J00LZ",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

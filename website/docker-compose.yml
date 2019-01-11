@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  website:
+    image: j00lz/nodeserver:1.0.0
+    deploy:
+      replicas: 5
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+    networks: 
+      - webnet
+networks: 
+  webnet:
